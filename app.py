@@ -113,7 +113,7 @@ st.markdown("""
 if __name__ == '__main__':
     if st.button("Predict"):
         predicts = predict(input)
-        if predicts > 0.5:
+        if predicts > 0.70:
             st.success("The transaction is not fraudulent. ✅")
             st.markdown(
     """
