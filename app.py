@@ -129,10 +129,10 @@ if __name__ == '__main__':
     """,
     unsafe_allow_html=True)
         else:
-            st.error("The transaction is Not default . ⚠️")
-            st.warning("Please check the transaction details and take necessary actions.⏩")
-            # st.image("https://www.onlygfx.com/wp-content/uploads/2020/05/alert-stamp-1.png", use_column_width=True)
-            st.markdown(
+                st.error("The transaction is Not default . ⚠️")
+                st.warning("Please check the transaction details and take necessary actions.⏩")
+                # st.image("https://www.onlygfx.com/wp-content/uploads/2020/05/alert-stamp-1.png", use_column_width=True)
+                st.markdown(
     """
     <style>
     .stApp {
