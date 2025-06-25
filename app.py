@@ -113,8 +113,8 @@ st.markdown("""
 if __name__ == '__main__':
     if st.button("Predict"):
         predicts = predict(input)
-        if predicts == 0:       
-            st.success("The transaction is not fraudulent. ✅")
+        if predicts == 1:       
+            st.success("The transaction is default. ✅")
             st.markdown(
     """
     <style>
@@ -129,7 +129,7 @@ if __name__ == '__main__':
     """,
     unsafe_allow_html=True)
         else:
-            st.error("The transaction is fraudulent. ⚠️")
+            st.error("The transaction is Not default . ⚠️")
             st.warning("Please check the transaction details and take necessary actions.⏩")
             # st.image("https://www.onlygfx.com/wp-content/uploads/2020/05/alert-stamp-1.png", use_column_width=True)
             st.markdown(
